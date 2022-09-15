@@ -19,6 +19,19 @@ const questions = [
           }
     },
     {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email? (Required)',
+      validate: emailInput => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log('Please enter your email!');
+            return false;
+          }
+        }
+  },
+    {
         type: 'input',
         name: 'userStory',
         message: 'What is the user story for this project? (Required)',

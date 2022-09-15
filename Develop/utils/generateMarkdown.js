@@ -31,6 +31,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   * [Project Name](#name)
+  * [Email] (#email)
   * [User Story] (#userStory)
   * [Criteria] (#criteria)
   * [Languages] (#languages)
